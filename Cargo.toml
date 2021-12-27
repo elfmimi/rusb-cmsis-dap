@@ -1,0 +1,21 @@
+[package]
+name = "rusb-cmsis-dap"
+version = "0.1.0"
+authors = ["Ein Terakawa <applause@elfmimi.jp>"]
+edition = "2018"
+description = "USB Test"
+# repository = "https://github.com/elfmimi/usb-test"
+# keywords = ["usb"]
+# categories = ["command-line-utilities", "development-tools", "embedded"]
+# license = "MIT OR Apache-2.0"
+# readme = "README.md"
+
+[dependencies]
+rusb = "0.8.0"
+thiserror = "1.0.10"
+log = { version = "0.4.8", features = ["std"] }
+pretty_env_logger = "0.3.0"
+
+[[bin]]
+path = "main.rs"
+name = "rusb-cmsis-dap"
